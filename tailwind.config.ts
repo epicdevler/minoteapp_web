@@ -1,4 +1,7 @@
+import { color } from "@chakra-ui/react";
 import type { Config } from "tailwindcss";
+
+const colors = require('tailwindcss/colors')
 
 const config: Config = {
   content: [
@@ -7,13 +10,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+    colors: {
+      primary: '#0058CB',
+      background: "#1B1B1F",
+      onBackground: "#E3E2E6",
+      card: "#6F6F6F",
+      onPrimary: {
+        light: colors.white,
+        DEFAULT: color.white,
+        dark: colors.inherit,
       },
-    },
+      ...colors
+    }
   },
   plugins: [],
 };
