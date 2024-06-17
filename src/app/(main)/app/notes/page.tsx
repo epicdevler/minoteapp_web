@@ -13,7 +13,7 @@ const Notes = () => {
     var [uiState, setUiState] = useState<UiState>(initUiState)
 
     return (
-        <div className="h-full flex flex-col">
+        <div className="h-full flex flex-col ">
             <section className="flex justify-between items-center">
                 <p className="text-2xl flex-none">{uiState.msg}</p>
                 {
@@ -103,36 +103,28 @@ const dummyList: Array<NoteModel> = [
         title: 'Lorem Ipsom Meeting',
         date: 'Jun 9, 23'
     },
+    // {
+    //     id: '2',
+    //     shortText: 'Yorem ipsum dolodignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut ',
+    //     tag: 'Tag',
+    //     title: 'Lorem Ipsom Meeting',
+    //     date: 'Jun 9, 23'
+    // },
+    // {
+    //     id: '3',
+    //     shortText: 'Yorem ipsum dolodignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut ',
+    //     tag: 'Tag',
+    //     title: 'Lorem Ipsom Meeting',
+    //     date: 'Jun 9, 23'
+    // },
 
-    {
-        id: '1',
-        shortText: 'Yorem ipsum dolodignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut ',
-        tag: 'Tag',
-        title: 'Lorem Ipsom Meeting',
-        date: 'Jun 9, 23'
-    },
-    {
-        id: '2',
-        shortText: 'Yorem ipsum dolodignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut ',
-        tag: 'Tag',
-        title: 'Lorem Ipsom Meeting',
-        date: 'Jun 9, 23'
-    },
-    {
-        id: '3',
-        shortText: 'Yorem ipsum dolodignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut ',
-        tag: 'Tag',
-        title: 'Lorem Ipsom Meeting',
-        date: 'Jun 9, 23'
-    },
-
-    {
-        id: '4',
-        shortText: 'Yorem ipsum dolodignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut ',
-        tag: 'Tag',
-        title: 'Lorem Ipsom Meeting',
-        date: 'Jun 9, 23'
-    },
+    // {
+    //     id: '4',
+    //     shortText: 'Yorem ipsum dolodignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut ',
+    //     tag: 'Tag',
+    //     title: 'Lorem Ipsom Meeting',
+    //     date: 'Jun 9, 23'
+    // },
 ]
 
 type NoteModel = {
