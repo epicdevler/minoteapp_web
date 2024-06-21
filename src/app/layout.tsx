@@ -1,12 +1,23 @@
 
 import type { Metadata } from "next";
-import { Inter, Reem_Kufi } from "next/font/google";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import theme from "./_theme/theme";
+import { Inter, Reem_Kufi, Roboto, Zen_Kaku_Gothic_Antique } from "next/font/google";
 
-const reemKufi = Reem_Kufi({subsets: ['latin']})
+const reemKufi = Reem_Kufi({ subsets: ['latin'] })
+const zen = Zen_Kaku_Gothic_Antique(
+  {
+    subsets: ['latin'],
+    weight: ["300", "400", "500", "700", "900"]
+  }
+)
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ["100", "300", "400", "500", "700", "900"]
 
+})
+
+const useFont = zen
 
 export const metadata: Metadata = {
   title: "Aminote | Create note effortlessly",
@@ -21,10 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-      <body className={`${reemKufi.className}`}>
+      <body className={`${useFont.className}`}>
         <ChakraProvider >
-          
-        {children}
+
+          {children}
         </ChakraProvider>
       </body>
     </html>

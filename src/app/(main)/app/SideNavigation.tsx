@@ -30,7 +30,7 @@ const SideNav = () => {
 
   return (
     <>
-      <nav className={`w-3/12 hidden landscape:flex portrait:md:flex h-full flex-col justify-between ${colorStyles}`}>
+      <nav className={`w-2/12 hidden landscape:flex portrait:md:flex h-full flex-col justify-between ${colorStyles}`}>
         <div className="flex-auto bg-red">
           <h1 className="w-full p-3 my-5 "><Link href={'/app/notes'} className="w-full flex justify-center"><Image src={'/icon_log.svg'} alt="minote" width={50} height={50} /></Link></h1>
           <Divider mb={5} />
