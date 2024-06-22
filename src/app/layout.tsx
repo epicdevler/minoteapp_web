@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-page-custom-font */
+/* eslint-disable @next/next/google-font-display */
 
 import type { Metadata } from "next";
 import "./globals.css";
@@ -17,7 +19,7 @@ const roboto = Roboto({
 
 })
 
-const useFont = zen
+const useFont = roboto
 
 export const metadata: Metadata = {
   title: "Aminote | Create note effortlessly",
@@ -31,6 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
       <body className={`${useFont.className}`}>
         <ChakraProvider >

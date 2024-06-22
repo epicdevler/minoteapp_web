@@ -18,7 +18,7 @@ export default function AppRootLayout({
       <main className=" bg-[url('/auth_bg.png')] bg-center bg-cover bg-no-repeat min-h-dvh w-full">
         <div className="bg-black/70 min-h-dvh w-full ">
           <section className="md:w-11/12 lg:w-8/12 mx-auto min-h-dvh justify-end grid grid-cols-1 md:grid-cols-2 gap-3 md:pt-10 lg:pt-20">
-            <aside className="p-3 pt-10 ">
+            <aside className="p-3 pt-10 text-white ">
               <Image src={'/icon_text_logo.svg'} width={150} height={150} alt="" />
               <h1 className="mt-15 mt-20 mb-7 text-3xl">
                 Building for the Future...

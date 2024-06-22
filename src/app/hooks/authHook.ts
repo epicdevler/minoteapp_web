@@ -16,8 +16,11 @@ export const useHandleAuth = () => {
         const _user = new User().getCurrentUser()
 
         if(_user == null){
-        if(colorMode === "dark")
-            router.replace('/auth/login')
+        if(colorMode === "dark"){
+            toggleColorMode()
+        }
+
+            router.replace('/auth/signin')
         }
 
     }, [])

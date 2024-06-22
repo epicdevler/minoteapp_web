@@ -10,7 +10,6 @@ export default function AppRootLayout({
   children: React.ReactNode;
 }>) {
 
-
   const handleAuth = useHandleAuth()
 
   return (

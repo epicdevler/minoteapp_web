@@ -1,10 +1,18 @@
 'use client'
 import InputField from "@/app/_components/Input"
 import { Button, Divider, Flex, Input } from "@chakra-ui/react"
+import exp from "constants"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 
 const Page = () => {
+
+    const uiState = useState<AuthUiState>({isError: false, isLoading: false, isSuccess: false, msg: "", debugData: null})
+
+    const emailValue = useState<string>();
+    const passwordValue = useState<string>();
+
 
     return (
         <>
@@ -53,3 +61,12 @@ const Page = () => {
 
 
 export default Page
+
+
+export type AuthUiState = {
+    isLoading: boolean,
+    isSuccess: boolean,
+    isError: boolean,
+    msg: string,
+    debugData: any
+}
