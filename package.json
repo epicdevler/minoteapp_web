@@ -15,11 +15,13 @@
     "@emotion/styled": "^11.11.5",
     "@lottiefiles/dotlottie-react": "^0.6.4",
     "dotenv": "^16.4.5",
+    "formik": "^2.4.6",
     "framer-motion": "^11.2.10",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "realm-web": "^2.0.1"
+    "realm-web": "^2.0.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",

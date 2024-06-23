@@ -5,6 +5,7 @@ import { Divider, useColorMode } from "@chakra-ui/react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useEffect } from "react"
 
 const SideNav = () => {
 
@@ -22,6 +23,7 @@ const SideNav = () => {
   ]
 
   const path = usePathname()
+  // const a = 
   const { colorMode, toggleColorMode } = useColorMode()
 
   var activePath = path;
